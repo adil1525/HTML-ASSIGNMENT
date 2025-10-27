@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas</title>
+    <style> 
+        h1{
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>Canvas objects</h1>
+    <hr>
+    <canvas id="myCanvas" width="400" height="300" 
+            style="border:1px solid black;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var c = canvas.getContext("2d");
+        c.fillStyle = "blue";
+        c.fillRect(100, 100, 100, 50);
+        c.beginPath();
+        c.moveTo(50, 200);
+        c.lineTo(250, 200);
+        c.strokeStyle = "red";
+        c.stroke();
+        c.beginPath();
+        c.arc(250, 100, 40, 0, 2 * Math.PI);
+        c.strokeStyle = "green";
+        c.stroke();
+        c.font = "20px Arial";
+        c.fillStyle = "gold";
+        c.fillText("PSI", 50, 50);
+        c.strokeText("Adil", 100, 40);
+    </script>
+</body>
+</html>

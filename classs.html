@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        h2{
+            text-align: center;
+            color: red;
+            font-weight: bold;
+            margin: 5px;
+          
+            
+        }
+        h3,h4,p{
+            margin:5px;
+        }
+            
+    
+
+       
+        h1{
+            text-align: center;
+            background-color: black;
+            color: white;
+           
+        }
+         table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 90%;
+        }
+          th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+         td[rowspan="5"] {
+            background-color: #ffe699;
+            font-weight: bold;
+        }
+         body{
+            text-align: center;
+            padding: 0;
+        }
+        .head{
+            text-align: center;
+             background-color: #b3b3b3 ;
+
+
+        }
+        .start{
+            font-weight: bold;
+            color: black;
+            background-color: #b3b3b3 ;
+        }
+        .break{
+            width: 2px;
+            margin: 15px;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+        h3,h4{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Time Table</h1>
+     <h2>MOHAN BABU UNIVERSITY</h2>
+   
+    <h3>School of Computing</h3>
+    <h3>Department of Data Science</h3>
+    <h4>Class Work Time Table (2025-26)</h4>
+    <h4>V Semester (DS-1)</h4>
+     <p>Room No.: 618</p>
+      <p>W.E.F: 28.07.2025</p>
+
+
+   
+
+    <table border="2" cellpadding="10" cellspacing="0">
+        <tr class="head">
+            <th>Day / Time</th>
+            <th>11:10AM - 12:05PM</th>
+            <th>12:05PM - 1:00PM</th>
+            <td rowspan="10" class="break">LUNCH BREAK</td>
+            <th>2:15PM - 3:10PM</th>
+            <th>3:10PM - 4:05PM</th>
+             <td rowspan="10" class="break"> BREAK</td>
+
+            <th>4:15PM - 5:10PM</th>
+            <th>5:10PM - 6:05PM</th>
+        </tr>
+         
+
+        <tr >
+            <td  class="start">Monday</td>
+            <td>CP</td>
+            <td>CP</td>
+            <td colspan="2">ML LAB</td>
+            <td>WT</td>
+            <td>PA (MOOC)</td>
+        </tr>
+       
+
+        <tr>
+            <td  class="start">Tuesday</td>
+            <td>CAO (MOOC)</td>
+            <td>ML</td>
+            <td>LIB</td>
+            <td>DM</td>
+            <td colspan="2">QAVA</td>
+        </tr>
+
+        <tr>
+            <td  class="start">Wednesday</td>
+            <td>PA (MOOC)</td>
+            <td>DM</td>
+            <td>LIB</td>
+            <td>DM</td>
+            <td>LIB</td>
+            <td>CAO (MOOC)</td>
+        </tr>
+
+        <tr>
+            <td class="start">Thursday</td>
+            <td>WT</td>
+            <td>CP</td>
+            <td>DM</td>
+            <td>ML</td>
+            <td colspan="2">QAVA</td>
+        </tr>
+
+        <tr>
+            <td class="start">Friday</td>
+            <td>CAO (MOOC)</td>
+            <td>WT</td>
+            <td colspan="2">WT LAB</td>
+            <td colspan="2">QAVA</td>
+        </tr>
+    </table>
+    
+</body>
+</html> 
+
